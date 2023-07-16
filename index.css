@@ -1,0 +1,236 @@
+
+body, h1, h2, h3, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+#searchForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#searchForm input[type="text"],
+#searchForm button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchForm button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#jobs {
+    padding: 20px;
+}
+
+.job {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.job img {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job h3 {
+    margin-bottom: 5px;
+}
+
+.job p {
+    color: #777;
+}
+
+#about, #contact {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchForm input[type="text"],
+    #searchForm button {
+        width: calc(50% - 10px);
+    }
+
+    #searchForm button {
+        margin-top: 5px;
+    }
+
+    .job {
+        flex-direction: column;
+    }
+
+    .job img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #searchForm input[type="text"],
+    #searchForm button {
+        width: 100%;
+    }
+
+    #searchForm button {
+        margin-top: 5px;
+    }
+}
+
+/* Basic CSS Reset and General Styling */
+/* ... previous styles ... */
+
+/* New Styles for Grid Layout */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Larger About Section */
+#about {
+    padding: 40px;
+}
+
+/* Improved Contact Form Styling */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+/* ... previous responsive styles ... */
+
+/* Basic CSS Reset and General Styling */
+/* ... previous styles ... */
+
+/* New Styles for Grid Layout */
+/* ... previous styles ... */
+
+.job {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.job:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.job img {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.job-info {
+    flex: 1;
+}
+
+/* Larger About Section */
+/* ... previous styles ... */
+
+/* Improved Contact Form Styling */
+/* ... previous styles ... */
+
+/* Responsive Styles */
+/* ... previous responsive styles ... */
